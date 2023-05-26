@@ -7,60 +7,64 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Web Lagu Laravel
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Ini adalah web yang sangat sederhana, dibuat saat menjoki tugas uts mahasiswa, semua fitur yang ada adalah fitur fitur paling dasar.Web ini menggunakan template dari bootstrap yaitu SB Admin 2.
+Ada beberapa web joki laravel yg tidak saya upload dikarenakan isi nya hampir sama dan yang saya upload hanya ini.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Fitur yang ada di dalam nya :
+- Login
+- Crud Data Mahasiswa
+- Crud Data Lagu
+- Beberapa halaman text biasa
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+Langkah pertama adalah membuat database di phpmyadmin. Lalu buat database `uts_lagu`. Setelah membuat database di phpmyadmin, buka project anda diterminal misal,buka di vscode folder `Web-Laravel_joki-uts-lagu` lalu buka terminal vs code jalankan perintah :
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```bash
+  php artisan migrate
+```
+Perintah tersebut akan membuat database yang di perlukan, lalu setelah itu aplikasi sudah siap, tinggal jalankan menggunakan :
 
-### Premium Partners
+```bash
+  php artisan serve
+```
+Setelah menjalankan perintah tersebut akan muncul alamat :
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+```bash
+  http://127.0.0.1:8000/
+```
+jalankan alamat di atas di dalam browser anda misal, chrome, firefox, dll. Lalu akan muncul halaman login, artinya aplikasi sudah siap, silahkan register terlebih dahulu lalu login, selamat mencoba.
+## Error
+Jika proses instalasi gagal saat menjalankan `php artisan migrate` inilah beberapa penyebab terjadinya error :
 
-## Contributing
+#### Versi PHP 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Error mungkin terjadi jika versi php tidak sesuai, pada project ini saya mengguakan php versi `8.0.28` jika php anda di bawah ini silahkan download xampp terbaru.
 
-## Code of Conduct
+#### Masalah Pada Composer
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Jika versi pada php sudah sesuai dan error masih terjadi mungkin itu adalah composer yang bermasalah, coba langkah langkah berikut :
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+  composer self-update
+```
 
-## License
+```bash
+  composer install
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+  composer update
+```
+## Authors
+
+- **[@undeath-cyber](https://www.github.com/undeath-cyber)**
+
