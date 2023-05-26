@@ -11,7 +11,7 @@
 # Web Lagu Laravel
 
 Ini adalah web yang sangat sederhana, dibuat saat menjoki tugas uts mahasiswa, semua fitur yang ada adalah fitur fitur paling dasar.Web ini menggunakan template dari bootstrap yaitu SB Admin 2.
-
+Ada beberapa web joki laravel yg tidak saya upload dikarenakan isi nya hampir sama dan yang saya upload hanya ini.
 
 
 ## Features
